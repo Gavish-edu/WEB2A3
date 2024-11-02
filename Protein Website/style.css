@@ -1,0 +1,891 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.alatsi-regular {
+    font-family: "Alatsi", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.allerta-stencil-regular {
+    font-family: "Allerta Stencil", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.bungee-regular {
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.balthazar-regular {
+    font-family: "Balthazar", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f6f1e3;
+    overflow-x: hidden;
+    /* Prevent horizontal overflow */
+
+}
+
+/*------------------------------------------ Navbar------------------------------------------ */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    background-color: #2b2b2b;
+}
+
+.navbar .logo {
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    font-family: "Allerta Stencil", sans-serif;
+    margin-right: auto;
+}
+
+.navbar nav {
+    flex: 1;
+    /* Allows the nav to take up the remaining space */
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    /* Distributes links evenly */
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+    /* Adjusts spacing between items */
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.navbar ul li a:hover {
+    color: #ffc107;
+}
+
+/*------------------------------------------First Carousel------------------------------------------ */
+.main-banner {
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    height: 85vh;
+    position: relative;
+}
+
+input[type=radio] {
+    display: none;
+}
+
+.card {
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transition: transform .4s ease;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.container {
+    width: 90%;
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.cards {
+    position: relative;
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 2.5rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    white-space: nowrap;
+    font-family: "Balthazar", serif;
+
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+#item-1:checked~.cards #slide-3,
+#item-2:checked~.cards #slide-1,
+#item-3:checked~.cards #slide-2 {
+    transform: translatex(-40%) scale(.8);
+    opacity: .4;
+    z-index: 0;
+}
+
+#item-1:checked~.cards #slide-2,
+#item-2:checked~.cards #slide-3,
+#item-3:checked~.cards #slide-1 {
+    transform: translatex(40%) scale(.8);
+    opacity: .4;
+    z-index: 0;
+}
+
+#item-1:checked~.cards #slide-1,
+#item-2:checked~.cards #slide-2,
+#item-3:checked~.cards #slide-3 {
+    transform: translatex(0) scale(1);
+    opacity: 1;
+    z-index: 1;
+
+    img {
+        box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
+    }
+}
+
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    bottom: 10px;
+}
+
+.carousel-indicators .indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#item-1:checked~.carousel-indicators label[for="item-1"],
+#item-2:checked~.carousel-indicators label[for="item-2"],
+#item-3:checked~.carousel-indicators label[for="item-3"] {
+    background-color: #2992dc;
+}
+
+/*------------------------------------------Journey------------------------------------------ */
+.journey {
+    text-align: center;
+    margin-top: 0px;
+    padding: 20px;
+    background-color: #f6f1e3;
+}
+
+.journey h1,
+.protein h1,
+.preworkout h1,
+.creatine h1,
+.guidance h1,
+.review h1 {
+    font-size: 50px;
+    font-weight: bold;
+    color: #2b2b2b;
+    margin-bottom: 3%;
+}
+
+.image-row {
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+}
+
+.image-container7 {
+    position: relative;
+    width: 25%;
+    overflow: visible;
+    display: inline-block;
+}
+
+.image-container7:hover {
+    animation: bounce 0.5s forwards;
+    /* Apply bounce animation on hover */
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.image:hover {
+    transform: scale(1.1);
+}
+
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-10px);
+    }
+
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+.overlay-text1 {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translate(0, 75%) rotate(-90deg);
+    transform-origin: center left;
+    font-size: 2rem;
+    color: rgba(255, 255, 255);
+    opacity: 0.6;
+    white-space: nowrap;
+    transition: opacity 0.3s ease;
+    padding: 5px;
+    font-weight: bold;
+    font-family: "Bungee", sans-serif;
+
+}
+
+.overlay-text2 {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translate(0, 200%) rotate(-90deg);
+    transform-origin: center left;
+    font-size: 2rem;
+    color: rgba(255, 255, 255);
+    opacity: 0.6;
+    white-space: nowrap;
+    transition: opacity 0.3s ease;
+    padding: 5px;
+    font-weight: bold;
+    font-family: "Bungee", sans-serif;
+
+
+}
+
+.image-container7:hover .overlay-text2 {
+    opacity: 1;
+}
+
+.image-container7:hover .overlay-text1 {
+    opacity: 1;
+}
+
+/*------------------------------------------Products Carousel------------------------------------------ */
+
+
+.protein,
+.preworkout,
+.creatine,
+.guidance,
+.review {
+    text-align: center;
+    margin-top: 0px;
+    padding: 20px;
+    height: 100%;
+    background-color: #f6f1e3;
+}
+
+.carousel-container2 {
+    position: relative;
+    width: 100%;
+    overflow: visible;
+    -ms-wrap-margin: true;
+}
+
+.product-row {
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+    width: max-content;
+    overflow: visible;
+    gap: 20px;
+}
+
+.product-card {
+    background-color: #000;
+    width: 25%;
+    max-width: 350px;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    opacity: 0;
+    /* Start as transparent */
+    transform: translateY(50px);
+    /* Start below its final position */
+}
+
+.product-card:hover {
+    cursor: pointer;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+    /* Shadow on hover */
+}
+
+
+.image-container {
+    position: relative;
+    width: 100%;
+    max-width: 250px;
+    height: 250px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+
+.label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: red;
+    color: white;
+    padding: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: "Alatsi", sans-serif;
+}
+
+.product-info {
+    margin-top: 15px;
+    font-family: "Alatsi", sans-serif;
+
+}
+
+.product-title {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "Alatsi", sans-serif;
+
+}
+
+.group {
+    font-size: 14px;
+    font-weight: bold;
+    color: gray;
+    font-family: "Alatsi", sans-serif;
+
+}
+
+.price {
+    font-size: 16px;
+    color: #ff4040;
+    font-weight: bold;
+    font-family: "Alatsi", sans-serif;
+
+}
+
+.rrp {
+    font-size: 14px;
+    color: gray;
+    font-family: "Alatsi", sans-serif;
+
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    color: white;
+    /* Initial text/icon color */
+    font-size: 30px;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 10;
+}
+
+.left-arrow {
+    left: 10px;
+}
+
+.right-arrow {
+    right: 10px;
+}
+
+.arrow:hover {
+    color: black;
+    /* Change text/icon color on hover */
+}
+
+/*------------------------------------------Guidance------------------------------------------ */
+
+.guide-card {
+    background-color: #293087;
+    width: 95vw;
+    min-height: 60vh;  /* Minimum height to ensure card accommodates small text */
+    max-height: auto;   /* Allow card to expand with content */
+    border-radius: 5px;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    overflow: hidden;
+    flex: 0 0 100%;
+    scroll-snap-align: center;
+    box-sizing: border-box;
+}
+
+.image-container2 {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px 0 0 5px;
+    height: auto;
+}
+
+.image-container2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.scroll-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding: 20px;
+    width: 100%;
+
+}
+
+.overlay-text4 {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translate(0, 220%) rotate(-90deg);
+    transform-origin: center left;
+    font-size: 3rem;
+    color: rgba(255, 255, 255);
+    white-space: nowrap;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.overlay-text3 {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translate(0, 100%) rotate(-90deg);
+    transform-origin: center left;
+    font-size: 3rem;
+    color: rgba(255, 255, 255);
+    white-space: nowrap;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.scroll-container::-webkit-scrollbar {
+    display: none;
+}
+
+.scroll-container .container3 {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    min-width: 300px;
+}
+
+.infotxt {
+    color: white;
+    font-size: 1.3vw; 
+    line-height: 1.5;
+    padding: 20px;
+    font-family: "Alatsi", sans-serif;
+    overflow-wrap: break-word;
+}
+
+
+.image-container5 {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px 0 0 5px;
+
+}
+
+.image-container5 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.container-static {
+    width: 90vw;
+}
+
+.static-guide-card {
+    background-color: #293087;
+    width: 95vw;
+    min-height: 60vh;  /* Minimum height to ensure card accommodates small text */
+    max-height: auto;   /* Allow card to expand with content */    
+    border-radius: 5px;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    overflow: hidden;
+    flex: 0 0 100%;
+    scroll-snap-align: center;
+    box-sizing: border-box;
+}
+
+.image-container-static {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px 0 0 5px;
+    height: auto;
+}
+
+.image-container-static img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    position: relative;
+}
+
+/*------------------------------------------Athletes' Review------------------------------------------ */
+.review-section {
+    padding: 20px;
+    text-align: center;
+}
+
+.review-section h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.review-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.review-container::-webkit-scrollbar {
+    display: none;
+}
+
+.review-card {
+    flex: 0 0 100%;
+    background-color: #31b82a;
+    scroll-snap-align: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100vw;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.review-image-container {
+    flex: 1;
+    max-width: 250px;
+    position: relative;
+}
+
+.review-image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.review-image-container h3 {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 2rem;
+    margin: 0;
+    text-align: center;
+    white-space: nowrap;
+
+}
+
+.reviewstyle {
+    position: absolute;
+    color: white;
+}
+
+.review-info {
+    flex: 2;
+    padding-left: 20px;
+    color: #fff;
+    font-size: 1.2rem;
+    text-align: left;
+    font-family: "Alatsi", sans-serif;
+
+}
+
+
+.review-text {
+    line-height: 1.6;
+}
+
+.review-indicator-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.review-indicator {
+    width: 12px;
+    height: 12px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    margin: 0 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.review-indicator.active {
+    background-color: #333;
+}
+
+/*------------------------------------------About Us------------------------------------------ */
+.about-us {
+    background-color: #000;
+    color: #fff;
+    text-align: left;
+    padding: 30px;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    width: 100%;
+    margin: 0 auto;
+    font-family: "Alatsi", sans-serif;
+
+}
+
+.about-us h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+/*------------------------------------------Footer------------------------------------------ */
+
+footer {
+    background-color: #1c1c1c;
+    padding: 30px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    color: #fff;
+    height: 350px;
+    font-size: 1.5rem;
+
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.footer-left {
+    width: 50vw;
+    padding-top: 10px;
+    font-family: "Alatsi", sans-serif;
+
+}
+
+.footer-left h1 {
+    font-size: 36px;
+    font-family: "Allerta Stencil", sans-serif;
+    margin-bottom: 10px;
+}
+
+.footer-left-split {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-section,
+.subscribe-section {
+    width: 48%;
+}
+
+.contact-section h3,
+.subscribe-section h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.contact-section p,
+.subscribe-section p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-icons a img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-right {
+    width: 50vw;
+    position: relative;
+    height: 100%;
+}
+
+.image-overlay {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.image-overlay img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.image-overlay::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+/* Footer container */
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Dumbbell SVG icon styling */
+.dumbbell-icon {
+    margin-top: 10px;
+    animation: bounce 1.2s infinite;
+    /* Add bounce animation */
+}
+
+/* Bounce Animation */
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+        /* Start and end at the original position */
+    }
+
+    30% {
+        transform: translateY(-15px);
+        /* Move up higher for a more pronounced bounce */
+    }
+
+    50% {
+        transform: translateY(-10px);
+        /* Slightly lower bounce */
+    }
+
+    70% {
+        transform: translateY(-5px);
+        /* Slightly lower bounce */
+    }
+}
+
+/* Center the dumbbell SVG */
+.dumbbell-svg {
+    width: 60px;
+    height: 60px;
+}
+
+.st0 {
+    fill: white;
+}
+
+.svg {
+    enable-background: new 0 0 122.88 46.83;
+    width: 60px;
+    height: 60px;
+}

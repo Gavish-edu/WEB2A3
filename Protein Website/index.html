@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name=”robots” content=”noai”>
+    <title>Pro-Fit</title>
+    <!--stylesheets-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="breakpoints.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.18.0/cdn/themes/light.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@latest/dist/shoelace.css">
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alatsi&family=Allerta+Stencil&family=Balthazar&family=Bungee&display=swap"
+        rel="stylesheet">
+</head>
+<audio id="click-sound" src="Audio/menu-button-88360 (1).mp3" preload="auto"></audio>
+<audio id="hover-sound" src="Audio/clicking-interface-select-201946.mp3" preload="auto"></audio>
+
+<body>
+<!--==========================================================================================================================-->
+                                                    <!--NAVIGATION BAR-->
+<!--==========================================================================================================================-->
+    <header>
+        <div class="navbar">
+            <div class="logo">PF</div>
+            <nav>
+                <ul class="navtext">
+                    <li><a>Home</a></li>
+                    <li><a href="#journey">Shop by Product</a></li>
+                    <li><a href="#guidance">Guide</a></li>
+                    <li><a href="#footer">Community</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+<!--==========================================================================================================================-->
+                                                    <!--FIRST CAROUSEL-->
+<!--==========================================================================================================================-->
+
+    <section class="main-banner">
+        <div class="container">
+            <input type="radio" name="slider" id="item-1" checked>
+            <input type="radio" name="slider" id="item-2">
+            <input type="radio" name="slider" id="item-3">
+
+            <div class="cards">
+                <label class="card" for="item-1" id="slide-1">
+                    <img src="web 2 mood/04e956ad2357896105fafc0f039f1aa3.jpg" alt="Slide 1">
+                    <span class="overlay-text">DON'T MISS OUT</span>
+                </label>
+                <label class="card" for="item-2" id="slide-2">
+                    <img src="web 2 mood/fc6172e18856216b2be7454d28d0ca55.jpg" alt="Slide 2">
+                    <span class="overlay-text">BOOST YOUR POWER 30% OFF</span>
+                </label>
+                <label class="card" for="item-3" id="slide-3">
+                    <img src="web 2 mood/c4e04d64437d0758dc0ea491ab99f682.jpg" alt="Slide 3">
+                    <span class="overlay-text">NEW ARRIVAL BUY NOW</span>
+                </label>
+            </div>
+            <div class="carousel-indicators">
+                <label for="item-1" class="indicator"></label>
+                <label for="item-2" class="indicator"></label>
+                <label for="item-3" class="indicator"></label>
+            </div>
+        </div>
+    </section>
+<!--==========================================================================================================================-->
+                                                    <!--JOURNEY SELECTION-->
+<!--==========================================================================================================================-->
+    <section class="journey" id="journey">
+        <h1>Your Journey Starts Here</h1>
+        <div class="image-row">
+            <div class="image-container7">
+                <img src="web 2 mood/4f11569f74b0cc0ff3e91db187553e7d.jpg" onclick="window.location.href='#Protein'"
+                    alt="Protein" class="image">
+                <div class="overlay-text1">PROTEIN</div>
+            </div>
+            <div class="image-container7">
+                <img src="web 2 mood/8aa51a2e274fbab7bb1dd019b5230a31.jpg" onclick="window.location.href='#Pre-workout'"
+                    alt="Pre-workout" class="image">
+                <div class="overlay-text2">PRE-WORKOUT</div>
+            </div>
+            <div class="image-container7">
+                <img src="web 2 mood/8dad3bef5be647d7e2f27ed0d95067e3.jpg" onclick="window.location.href='#Creatine'"
+                    alt="Creatine" class="image">
+                <div class="overlay-text1">CREATINE</div>
+            </div>
+        </div>
+    </section>
+<!--==========================================================================================================================-->
+                                                    <!--PROTEIN CAROUSEL-->
+<!--==========================================================================================================================-->
+    <section class="protein" id="Protein">
+        <h1>Protein Powders</h1>
+        <div class="carousel-container2">
+            <sl-button variant="primary" size="large" circle id="protein-prev-btn" class="arrow left-arrow">
+                <sl-icon name="chevron-left"></sl-icon>
+            </sl-button>
+            <div class="product-row" id="proteinCarousel">
+                <div class="product-card">
+                    <div class="image-container">
+                        <img src="protein/01920257927516ec5b90b2c064f0f4f1.jpg" alt="PRO WHEY">
+                        <div class="label">PREMIUM</div>
+                    </div>
+                    <div class="product-info">
+                        <p class="group">360 PRO WHEY</p>
+                        <br>
+                        <p class="price">Price: $40.50</p>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="image-container">
+                        <img src="protein/1f31b358d5613a852662efdb769f437b.jpg" alt="100% WHEY">
+                        <div class="label">GOLD STANDARD</div>
+                    </div>
+                    <div class="product-info">
+                        <p class="group">100% WHEY</p>
+                        <br>
+                        <p class="price">Price: $35.91</p>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="image-container">
+                        <img src="protein/377ad758e6ab8584386a007ffa5baff7.jpg" alt="SPARTAN WHEY">
+                        <div class="label">CHOCOLATE FLAVORED</div>
+                    </div>
+                    <div class="product-info">
+                        <p class="group">SPARTAN WHEY</p>
+                        <br>
+                        <p class="price">Price: $34.80</p>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="image-container">
+                        <img src="protein/3f80f2bba60259672cbbfd402f408ac3.jpg" alt="NITRO">
+                        <div class="label">MUSCLETECH</div>
+                    </div>
+                    <div class="product-info">
+                        <p class="group">NITRO TECH</p>
+                        <br>
+                        <p class="price">Price: $39.90</p>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="image-container">
+                        <img src="protein/e27c5f404c67d7bb81330dd5e7582243.jpg" alt="MP">
+                        <div class="label">MP COMBAT</div>
+                    </div>
+                    <div class="product-info">
+                        <p class="group">MP COMBAT PROTEIN</p>
+                        <br>
+                        <p class="price">Price: $44.80</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="image-container">
+                        <img src="protein/ee9704ab7a77f78227aa6c3fda55445b.jpg" alt="VEGA">
+                        <div class="label">VANILLA</div>
+                    </div>
+                    <div class="product-info">
+                        <p class="group">VEGA SPORT PROTEIN</p>
+                        <br>
+                        <p class="price">Price: $34.80</p>
+                    </div>
+                </div>
+            </div>
+
+            <sl-button variant="primary" size="large" circle id="protein-next-btn" class="arrow right-arrow">
+                <sl-icon name="chevron-right"></sl-icon>
+            </sl-button>
+        </div>
+    </section>
+<!--==========================================================================================================================-->
+                                                    <!--PRE-WORKOUT CAROUSEL-->
+<!--==========================================================================================================================-->
+    <section class="preworkout" id="Pre-workout">
+        <h1>Pre-workouts</h1>
+        <div class="carousel-container2">
+            <sl-button variant="primary" size="large" circle id="preworkout-prev-btn" class="arrow left-arrow">
+                <sl-icon name="chevron-left"></sl-icon>
+            </sl-button>
+            <div class="product-row" id="preworkoutCarousel">
+                <div class="product-card">
+                    <div class="image-container">
+                        <img src="pree/1eecac8e0cf91fdc1373e4b959342d7d.jpg" alt="RYSE">
+                        <div class="label">STRAWBERRY KIWI</div>
+                    </div>
+                    <div class="product-info">
+                        <p class="group">RYSE PREWORKOUT</p>
+                        <br>
+                        <p class="price">Price: $24.99</p>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="image-container">
+                        <img src="pree/43726830b25d2962b8dd2d7dfc6cab55.jpg" alt="PSYCHO">
+                        <div class="label">GUMMY CANDY</div>
+                    </div>
+                    <div class="product-info">
+                        <p class="group">PSYCHOTIC PRE-WORKOUT</p>
+                        <br>
+                        <p class="price">Price: $40.25</p>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="image-container">
+                        <img src="pree/5b664a725fbc7f837f6845567abec613.jpg" alt="RAZE">
+                        <div class="label">FAT METABOLISM SUPPORT</div>
+                    </div>
+                    <div class="product-info">
+                        <p class="group">RAZE PRE-WORKOUT</p>
+                        <br>
+                        <p class="price">Price: $44.74</p>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="image-container">
+                        <img src="pree/c93d868d459056f57b8b2aaa86836e0f.jpg" alt="CANDY WOKE">
+                        <div class="label">HIGH STIMULANT</div>
+                    </div>
+                    <div class="product-info">
+                        <p class="group">CHERRY CANDY WOKE PRE-WORKOUT</p>
+                        <br>
+                        <p class="price">Price: $49.99</p>
+                    </div>
+                </div>
+            </div>
+            <sl-button variant="primary" size="large" circle id="preworkout-next-btn" class="arrow right-arrow">
+                <sl-icon name="chevron-right"></sl-icon>
+            </sl-button>
+        </div>
+    </section>
+<!--==========================================================================================================================-->
+                                                    <!--CREATINE CAROUSEL-->
+<!--==========================================================================================================================-->
+
+    <section class="creatine" id="Creatine">
+        <h1>Creatine</h1>
+        <div class="carousel-container2">
+            <sl-button variant="primary" size="large" circle id="creatine-prev-btn" class="arrow left-arrow">
+                <sl-icon name="chevron-left"></sl-icon>
+            </sl-button>
+            <div class="product-row" id="creatineCarousel">
+
+                <div class="product-card">
+                    <div class="image-container">
+                        <img src="crea/08d306fbd1744f8a89d86ead5a3e9439.jpg" alt="NUKE">
+                        <div class="label">NUKE</div>
+                    </div>
+                    <div class="product-info">
+                        <p class="group">W.D.D CREATINE</p>
+                        <br>
+                        <p class="price">Price: $24.80</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="image-container">
+                        <img src="crea/42e099dc8d8875857ca57d7d4c7b3ef6.jpg" alt="MONO">
+                        <div class="label">MONOHYDRATE</div>
+                    </div>
+                    <div class="product-info">
+                        <p class="group">CREATINE MONOHYDRATE</p>
+                        <br>
+                        <p class="price">Price: $44.60</p>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="image-container">
+                        <img src="crea/58927af7ddf11d238b75bd282009e76b.jpg" alt="OPTIMUM">
+                        <div class="label">OPTIMUM NUTRITION</div>
+                    </div>
+                    <div class="product-info">
+                        <p class="group">MICRONIZED CREATINE</p>
+                        <br>
+                        <p class="price">Price: $25.80</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="image-container">
+                        <img src="crea/5a74273ae0afcc2759fbf94d3bd796a2.jpg" alt="ORIGIN">
+                        <div class="label">NUKE</div>
+                    </div>
+                    <div class="product-info">
+                        <p class="group">NUKE ORIGIN CREATINE</p>
+                        <br>
+                        <p class="price">Price: $36.70</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="image-container">
+                        <img src="crea/5ae1a03793b8eb4de6076337adc4290d.jpg" alt="NUTREX">
+                        <div class="label">MONOHYDRATE</div>
+                    </div>
+                    <div class="product-info">
+                        <p class="group">NUTREX MONOHYDRATE CREATINE</p>
+                        <br>
+                        <p class="price">Price: $44.80</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="image-container">
+                        <img src="crea/6806d67a1b7857e296894e5dd30648e2.jpg" alt="ISOLATE">
+                        <div class="label">ISOLATE</div>
+                    </div>
+                    <div class="product-info">
+                        <p class="group">ISOLATE PROTEIN 100%</p>
+                        <br>
+                        <p class="price">Price: $49.90</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="image-container">
+                        <img src="crea/9fbb89bf2344a6758cb98f22d3789b97.jpg" alt="MAXMIGHT">
+                        <div class="label">MONOHYDRATE</div>
+                    </div>
+                    <div class="product-info">
+                        <p class="group">MAXMIGHT CREATINE</p>
+                        <br>
+                        <p class="price">Price: $31.50</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="image-container">
+                        <img src="crea/f09fe616c60fa7c3d746ccaae105d054.jpg" alt="ALLSTARS">
+                        <div class="label">MONOHYDRATE</div>
+                    </div>
+                    <div class="product-info">
+                        <p class="group">ALL STARS CREATINE</p>
+                        <br>
+                        <p class="price">Price: $34.80</p>
+                    </div>
+                </div>
+            </div>
+
+            <sl-button variant="primary" size="large" circle id="creatine-next-btn" class="arrow right-arrow">
+                <sl-icon name="chevron-right"></sl-icon>
+            </sl-button>
+        </div>
+    </section>
+<!--==========================================================================================================================-->
+                                                    <!--PRODUCT INFO-->
+<!--==========================================================================================================================-->
+    <section class="guidance" id="guidance">
+        <h1>Guidance</h1>
+        <div id="scroll-container" class="scroll-container">
+            <div class="container3">
+                <div class="guide-card">
+                    <div class="image-container2">
+                        <img src="crea/f9de0827ad72ff6fa7313f491945b292.jpg" alt="Creatine">
+                        <div class="overlay-text3">PROTEIN</div>
+                    </div>
+                    <div class="info">
+                        <p class="infotxt">
+                            Whey protein is a high-grade protein obtained from milk while making cheese.
+                            When milk curdles, it divides into solid curds and liquid whey.
+                            The liquid whey is transformed into whey protein powder, which is frequently utilized in
+                            nutritional supplements.
+                        </p>
+                        <br>
+                        <p class="infotxt">
+                            -Whey protein includes all nine necessary amino acids, which makes it a full protein.
+                            It is a commonly used supplement by athletes and bosybuilders to enhance muscle growth
+                        </p>
+                        <br>
+                        <p class="infotxt">
+                            -Whey protein is quickly absorbed by the bosy, aiding in post-workout
+                            recovery.</p>
+                        <br>
+                        <p class="infotxt">
+                            -Whey protein can assist in shedding fat by making you feel satisfied and
+                            content after eating.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container3">
+                <div class="guide-card">
+                    <div class="image-container5">
+                        <img src="crea/42e099dc8d8875857ca57d7d4c7b3ef6.jpg" alt="Creatine">
+                        <div class="overlay-text3">CREATINE</div>
+                    </div>
+                    <div class="info">
+                        <p class="infotxt">
+                            Creatine is a compound that is naturally present in muscle cells.
+                            It has a crucial function in generating energy, especially in activities that are short but
+                            intense such as weightlifting, sprinting, and explosive movements.
+                            Many athletes and fitness enthusiasts frequently use creatine supplements to improve muscle
+                            strength, power, and overall performance during exercise.
+                        </p>
+                        <br>
+                        <p class="infotxt">
+                            -Creatine boosts the capacity to produce power while engaging in activities
+                            that require strength, such as weightlifting or sprinting.
+                            It works well for tasks needing quick bursts of energy, like lifting heavy objects or sudden
+                            movements.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="button-container">
+            <sl-button variant="primary" size="large" id="guide-prev-btn" class="arrowbtn left">
+                <sl-icon name="arrow-left"></sl-icon>
+            </sl-button>
+            <sl-button variant="primary" size="large" id="guide-next-btn" class="arrowbtn right">
+                <sl-icon name="arrow-right"></sl-icon>
+            </sl-button>
+        </div>
+
+        <div class="container-static">
+            <div class="static-guide-card">
+                <div class="image-container-static">
+                    <img src="crea/08d306fbd1744f8a89d86ead5a3e9439.jpg" alt="Pre-workout">
+                    <div class="overlay-text4">PRE-WORKOUT</div>
+                </div>
+                <div class="info">
+                    <p class="infotxt">
+                        A pre-workout supplement is a blend created to boost athletic performance
+                        when consumed prior to working out.
+                        It usually includes a combination of components that enhance energy, stamina, concentration
+                        and power, assisting you in optimizing your exercise session.
+                    </p>
+                    <br>
+                    <p class="infotxt">
+                        -Pre-workout supplements with caffeine and other stimulants can give a
+                        powerful snergy boost, making you more alert and prepared for tough workouts, particularly
+                        when you're fatigued or sluggish.</p>
+                    <br>
+                    <p class="infotxt">
+                        -Beta-alanine and creatine aid in delaying muscle fatigue by decreasing
+                        lactic acide buildup and boosting energy production.
+                        This enables you to prolong your exercise sessions and finish additional sets or repetitions
+                        without getting tired as fast.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+<!--==========================================================================================================================-->
+                                                    <!--PROFESSIONAL REVIEWS-->
+<!--==========================================================================================================================-->
+    <section class="review-section">
+        <h1>ATHLETES' REVIEWS</h1>
+        <div class="review-container" id="reviewContainer">
+            <div class="review-card">
+                <div class="review-image-container">
+                    <img src="crea/5b79254a93fe2aa1dcdc65affded0647.jpg" alt="Athlete">
+                    <h3 class="reviewstyle">SAM SULEK</h3>
+                </div>
+                <div class="review-info">
+                    <p class="review-text">
+                        For the last 3 years, I have consistently taken creatine monohydrate, and the improvement in my
+                        strength and performance is unmistakable.
+                        Creatine assists me in pushing through challenging WODs and enhances my energy for intense
+                        weightlifting sessions.
+                        I have observed significant improvements in muscle size and strength, particularly in
+                        high-repetition and heavy-lifting workouts.
+                        What is the highlight? It's cost-effective, and I never suffer from bloating or retaining water.
+                        I consume 5g each day, even when I’m not exercising, and it has become a necessary part of my
+                        daily schedule.
+                    </p>
+                </div>
+            </div>
+            <div class="review-card">
+                <div class="review-image-container">
+                    <img src="crea/60b02bb58a43b57046b75695aae930e8.jpg" alt="Athlete">
+                    <h3 class="reviewstyle">PATRICIA</h3>
+                </div>
+                <div class="review-info">
+                    <p class="review-text">
+                        "As a bodybuilder, I rely on whey protein to hit my daily protein goals and keep my muscles
+                        fueled for growth.
+                        I prefer whey protein isolate because it's easy on my stomach and has zero lactose, which is a
+                        big plus for me.
+                        After every workout, I take a scoop with water, and I’ve noticed faster recovery and less
+                        soreness.
+                        I love that it’s versatile – I mix it into smoothies, oatmeal, and even bake with it! The clean
+                        ingredients and high protein content make it a staple in my diet."
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="review-indicator-container">
+            <span class="review-indicator active" onclick="scrollToReview(0)"></span>
+            <span class="review-indicator" onclick="scrollToReview(1)"></span>
+        </div>
+    </section>
+<!--==========================================================================================================================-->
+                                                    <!--ABOUT US-->
+<!--==========================================================================================================================-->
+    <div class="about-us">
+        <h2>ABOUT US</h2>
+        <p>At PRO-FIT, our commitment is to support your fitness journey by providing top-notch supplements. If you want
+            to increase muscle mass, improve stamina, or speed up recovery, our high-quality protein powders,
+            pre-workout formulas, and creatine products have you covered. Crafted for athletes at any skill level, our
+            products are supported by scientific research to assist in achieving optimal performance.</p>
+
+    </div>
+<!--==========================================================================================================================-->
+                                                    <!--FOOTER-->
+<!--==========================================================================================================================-->
+
+    <footer id="footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <h1>PRO-FIT</h1>
+                <div class="footer-left-split">
+                    <div class="contact-section">
+                        <h3>Contact Us</h3>
+                        <p>profit@gmail.com</p>
+                        <div class="social-icons">
+                            <a href="#"><img src="web 2 mood/instagram-logo.png" alt="Instagram"></a>
+                            <a href="#"><img src="web 2 mood/facebook.png" alt="Facebook"></a>
+                            <a href="#"><img src="web 2 mood/Threads.png" alt="Other"></a>
+                        </div>
+                    </div>
+                    <div class="subscribe-section">
+                        <h3>Subscribe</h3>
+                        <p>profit@gmail.com</p>
+                        <!-- Dumbbell SVG Animation -->
+                        <div class="dumbbell-icon">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 122.88 46.83"
+                                class="svg" xml:space="preserve">
+                                <g>
+                                    <path class="st0"
+                                        d="M122.88,35.96h-6.76V11.33h6.76V35.96L122.88,35.96z M24.61,20.29h73.56v6.26H24.61V20.29L24.61,20.29z M114.81,46.83h-12.69V0h12.69V46.83L114.81,46.83z M20.64,46.83H7.95V0h12.69V46.83L20.64,46.83z M6.63,35.96H0V11.33h6.63V35.96L6.63,35.96z" />
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="footer-right">
+                <div class="image-overlay">
+                    <img src="crea/80591e2870df348c449f161743b8dc87.jpg" alt="Protein Shelf">
+                </div>
+            </div>
+        </div>
+    </footer>
+<!--SCRIPTS-->
+    <script src="main.js"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.18.0/cdn/shoelace-autoloader.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+
+</body>
+
+</html>

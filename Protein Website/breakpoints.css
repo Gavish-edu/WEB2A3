@@ -1,0 +1,367 @@
+@media (max-width: 768px) {
+
+
+
+    .main-banner {
+        height: 60vh;
+        /* Adjust height for mobile */
+    }
+
+    .overlay-text {
+        font-size: 1.2rem;
+        /* Reduce font size */
+    }
+
+    .image-container7 {
+        width: 100%;
+        /* Full width for images */
+    }
+
+    .product-card-container {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+        padding: 20px;
+    }
+
+    .overlay-text1 {
+        font-size: 1.2rem;
+    }
+
+    .overlay-text2 {
+        font-size: 1.2rem;
+    }
+
+    .overlay-text3 {
+        font-size: 1.2rem;
+    }
+
+    .overlay-text4 {
+        font-size: 1.2rem;
+    }
+
+    .protein {
+        width: 100%;
+    }
+
+    .product-card {
+        width: 22vw;
+        height: auto;
+    }
+
+    .product-info {
+        margin-top: 15px;
+        font-family: "Alatsi", sans-serif;
+        font-size: 0.5rem
+    }
+
+
+    .guide-card {
+        width: 95vw;
+        min-height: 60vh;  /* Minimum height to ensure card accommodates small text */
+        max-height: auto;   /* Allow card to expand with content */    }
+
+    .image-container2 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .image-container2 {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        border-radius: 5px 0 0 5px;
+        height: auto;
+    }
+
+    .scroll-container {
+        width: 100vw;
+    }
+
+    .image-container5 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .image-container-static img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .container-static {
+        width: 90vw;
+    }
+
+    .static-guide-card {
+        height: 40vh;
+    }
+
+    .infotxt {
+        font-size: 2.3vw; 
+        line-height: 1;    }
+
+    .info {
+        width: fit-content;
+        padding-right: 20px;
+    }
+
+    .image-container2 {
+        width: 45vw;
+        height: auto;
+    }
+
+    .image-container5 {
+        width: 45vw;
+        height: auto;
+    }
+
+
+    .review-card {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .footer-left,
+    .footer-right {
+        width: 50%;
+    }
+
+    .footer-container {
+        flex-direction: row;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+}
+
+@media (min-width: 1024px) {
+    .navbar {
+        padding: 20px 40px;
+    }
+
+    .main-banner {
+        height: 85vh;
+        /* Keep height for desktop */
+    }
+
+    .overlay-text {
+        font-size: 2.5rem;
+        /* Keep font size for desktop */
+    }
+
+    .image-container7 {
+        width: 25%;
+        /* Keep width for images */
+    }
+
+    .product-card {
+        width: 22vw;
+        /* Keep width for desktop */
+    }
+
+    .image-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        border-radius: 5px;
+    }
+
+    .guide-card {
+        width: 95vw;
+        min-height: 60vh;  /* Minimum height to ensure card accommodates small text */
+        max-height: auto;   /* Allow card to expand with content */    }
+
+    .scroll-container {
+        width: 100vw;
+    }
+
+    .static-guide-card {
+        height: 40vh;
+    }
+
+    .info {
+        font-size: 2.5vw; 
+        line-height: 1;    
+    }
+
+
+    .review-card {
+        flex-direction: row;
+        /* Keep items in a row */
+        width: 100vw;
+        /* Full width for desktop */
+    }
+
+    .footer-container {
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+
+
+    .main-banner {
+        height: 60vh;
+        /* Adjust height for mobile */
+    }
+
+    .overlay-text {
+        font-size: 1.2rem;
+        /* Reduce font size */
+    }
+
+    .image-container7 {
+        width: 100%;
+        /* Full width for images */
+    }
+
+    .product-card-container {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+        padding: 20px;
+    }
+
+    .overlay-text1 {
+        font-size: 1.2rem;
+    }
+
+    .overlay-text2 {
+        font-size: 1.2rem;
+    }
+
+    .overlay-text3 {
+        font-size: 4vh;
+        padding-left: 2vw;
+    }
+
+    .overlay-text4 {
+        font-size: 4vh;
+        padding-left: 2vw;
+    }
+
+    .protein {
+        width: 100%;
+    }
+
+    .product-card {
+        width: 22vw;
+        height: auto;
+    }
+
+    .product-info {
+        margin-top: 15px;
+        font-family: "Alatsi", sans-serif;
+        font-size: 0.5rem
+    }
+
+
+    .guide-card {
+        width: 95vw;
+        min-height: 60vh; 
+        max-height: auto;   
+    }
+
+    .image-container2 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .image-container2 {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        border-radius: 5px 0 0 5px;
+        height: auto;
+    }
+
+    .scroll-container {
+        width: 100vw;
+    }
+
+    .image-container5 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .image-container-static img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .container-static {
+        width: 90vw;
+    }
+
+    .static-guide-card {
+        height: 40vh;
+    }
+
+    .infotxt {
+        font-size: 2.5vw; 
+        line-height: 1;    
+    }
+
+    .info {
+        width: fit-content;
+        padding-right: 10px;
+    }
+
+    .image-container2 {
+        width: 50vw;
+        height: auto;
+    }
+
+    .image-container5 {
+        width: 50vw;
+        height: auto;
+    }
+
+
+    .review-card {
+        flex-direction: column;
+        /* Stack items vertically */
+        width: 90%;
+        /* Adjust width */
+    }
+
+    .footer-left,
+    .footer-right {
+        width: 50vw;
+        /* Full width for footer sections */
+    }
+
+    .footer-container {
+        flex-direction: row;
+        /* Stack footer sections vertically */
+    }
+
+    .social-icons {
+        justify-content: center;
+        /* Center social icons */
+    }
+}
